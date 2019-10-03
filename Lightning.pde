@@ -13,10 +13,12 @@ void setup()
   photo = loadImage("star.png");
   phot = loadImage("sky.png");
   noLoop();
+  image(phot, 0, 0,300, 300);
+image(photo, 120, 0, 100, 100);
 }
 void draw()
 {
-	 image(phot, 0, 0,300, 300);
+	 
 	while(endY<=300)
 	{
 	 	stroke((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255));
@@ -26,8 +28,10 @@ void draw()
 	 	startX=endX;
 	 	startY=endY;
 	}
-	 image(photo, 120, 0, 100, 100);
 	
+	image(phot, 0, 0,300, 300);
+	image(photo, 120, 0, 100, 100);
+
 }
 void mousePressed()
 {
