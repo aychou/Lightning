@@ -13,8 +13,8 @@ void setup()
   photo = loadImage("star.png");
   phot = loadImage("sky.png");
   noLoop();
-  image(phot, 0, 0,300, 300);
-image(photo, 120, 0, 100, 100);
+	image(phot, 0, 0,300, 300);
+	image(photo, 120, 0, 100, 100);
 }
 void draw()
 {
