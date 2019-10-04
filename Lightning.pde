@@ -12,9 +12,11 @@ void setup()
   strokeWeight(3);
   photo = loadImage("star.png");
   phot = loadImage("sky.png");
+  image(phot, 0, 0,300, 300);
+image(photo, 120, 0, 100, 100);
+
   noLoop();
-	image(phot, 0, 0,300, 300);
-	image(photo, 120, 0, 100, 100);
+	
 }
 void draw()
 {
