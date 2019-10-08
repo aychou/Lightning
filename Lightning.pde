@@ -1,16 +1,20 @@
+/* @pjs preload="star.png"; */
 
+/* @pjs preload="sky.png"; */
 int startX=150;
 int startY =40;
 int endX = 150;
 int endY = 150;
-PImage photo= loadImage("star.png");
-PImage phot= loadImage("sky.png");
+
+PImage photo;
+PImage phot;
 void setup()
 {
   size(300,300);
   background(0);
   strokeWeight(3);
-
+photo= loadImage("star.png");
+phot= loadImage("sky.png");
   image(phot, 0, 0,300, 300);
 image(photo, 120, 0, 100, 100);
 
