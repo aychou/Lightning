@@ -1,11 +1,9 @@
 /* @pjs preload="star.png"; */
-
 /* @pjs preload="sky.png"; */
 int startX=150;
 int startY =40;
 int endX = 150;
 int endY = 150;
-
 PImage photo;
 PImage phot;
 void setup()
@@ -19,6 +17,10 @@ phot= loadImage("sky.png");
 image(photo, 120, 0, 100, 100);
 
   noLoop();
+  if (frameCount==0)
+  {
+  	redraw();
+  }
 	
 }
 void draw()
