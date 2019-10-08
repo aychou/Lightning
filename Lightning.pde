@@ -17,7 +17,7 @@ phot= loadImage("sky.png");
 image(photo, 120, 0, 100, 100);
 
   noLoop();
-  if (frameCount==0)
+  if (frameCount<5)
   {
   	redraw();
   }
